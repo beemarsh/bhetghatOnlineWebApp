@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhetghat Restaurant</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="icons/flaticon.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tut.css">
+    <style>
+ .loader {
+    border: 3px solid #eadfdf;
+    border-radius: 50%;
+    border-top: 5px solid #6534db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 0.4s linear infinite;
+    margin-top: 30px;
+    /* display: none; */
+}
+  .loadSec {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: white;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+    </style>
+</head>
+<body>
+    <div class="loadSec">
+        <div class="loader"></div>
+    </div>
+    <div class="tutbox">
+        <div class="tutContainer">
+            <div class="cBar"><span class="flaticon-close" onclick="hideTut()"></span></div>
+            <div class="vidIco"><img src="pics/video.png"></div>
+            <div class="headofTut">Quick Tool</div>
+            <div class="message"></div>
+            <div class="okButtMess"><span onclick="hideTut()">OK</span></div>
+        </div>
+    </div>
+    <a href="tel:+9779867147417" id="popup__toggle">
+        <div class="circlephone" style="transform-origin: center;"></div>
+        <div class="circle-fill" style="transform-origin: center;"></div>
+        <div class="img-circle" style="transform-origin: center;">
+            <div class="img-circleblock" style="transform-origin: center;"></div>
+        </div></a>
+        <header>
+            <div class="headContainer">
+                <a href="http://www.bhetghat.works"><div class="textHeader"><img src="pics/hot-food.png">Bhetghat Family Restaurant</div></a>
+                <div class="lists">
+                    <div class="items"><a href="order"><span class="flaticon-tracking">Order Food</span></a></div>
+                    <div class="items"><a href="map"><span class="flaticon-location">Find Map</span></a></div>
+                    <div class="items"><a href="menu"><span class="flaticon-menu">Menu</span></a></div>
+                </div>
+                <div class="navButt" onclick="showHideMobileNav()"><i class="flaticon-menu-1"></i></div>
+                <div class="mobNavList">
+                    <ul class="navListContainer">
+                        <li><a href="order"><span class="flaticon-tracking">Order Food</span></a></li>
+                        <li><a href="map"><span class="flaticon-location">Find Map</span></a></li>
+                        <li><a href="menu"><span class="flaticon-menu">Menu</span></a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <section class="sec1">
+        <div class="containersec1">
+            <div class="consecsec1">
+                <div class="mainHead">Bhetghat Family Restaurant</div>
+                <div class="subText">Tilottama,Rupandehi<br>Open  till 10:00</div>
+                <div class="iconContainer"><span class="flaticon-chef"></span></div>
+            </div>
+            <div class="consecsec2">
+                <div class="ordernow"><a href="order">Order Now<span class="flaticon-tracking icons"></span></a></div>
+                <div class="callnow"><a href="tel:+9779867147417">Call Now<span class="flaticon-telephone icons"></span></a></div>
+                <div class="direction"><a href="map">Get Directions / Map<span class="flaticon-location icons"></span></a></div>
+                <div class="viewMenu"><a href="menu">See Menu<span class="flaticon-menu icons"></span></a></div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="whywait">Why Wait??</div>
+        <div class="visitNow">Visit Now..</div>
+        <div class="footp1">
+            <div class="social"><span class="flaticon-facebook"></span></div>
+            <div class="social"><span class="flaticon-symbol"></span></div>
+            <div class="social"><span class="flaticon-instagram"></span></div>
+        </div>
+        <div class="footp2">&#169;This website is owned by Bhetghat.</div>
+    </footer>
+</body>
+<script src="js/jquery.js"></script>
+<script>localStorage.clear();</script>
+<script src="js/tut.js"></script>
+<script>
+    if(getCookie('bhet_er')!=1){
+        document.cookie = "bhet_er=1; expires=0; path=/";
+        document.addEventListener('DOMContentLoaded', function() {
+            showTutBox();
+            callButt();
+            setTimeout(bounceCall,4000);
+        }, false);
+    }
+    
+ function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+</script>
+</html>

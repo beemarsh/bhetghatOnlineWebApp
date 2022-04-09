@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.sec1{
+    height: 800px;
+    width: 100vw;
+}
+.sec1container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textDetail {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive;
+}
+.showAll {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.showtoclick {
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background: #5000ca;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+form {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fitem {
+    height: 50px;
+    width: 300px;
+    margin: 10px 0px 0px 10px;
+    border-radius: 1%;
+    border: 1.6px solid #5000ca52;
+    font-size: 0.9em;
+    box-shadow: -0.1px 1px 4px 0px #00000054;
+    text-indent: 10px;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    cursor: pointer;
+}
+.ficon {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #5000ca;
+    border-right: 2px solid #5000ca59;
+}
+.submit {
+    width: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: none;
+    background: #5000ca;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 0px 20px 0px 10px;
+    height: 50px;
+}
+.fitem input {
+    height: 100%;
+    width: 80%;
+    border: 0;
+    font-size: 1.1em;
+    text-indent: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+.ficon span::before {
+    font-size: 2.5em !important;
+}
+.ficon span{
+    margin-left: -16px;
+}
+.info {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    margin: 20px 0px 20px 0px;
+}
+.selecteditems {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    scrollbar-width: 5px;
+    z-index: 99;
+    background: #000000de;
+    top: 0;
+}
+.sContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.headbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4px;
+    justify-items: center;
+    align-content: center;
+    height: 50px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+.contentgrid {
+    display: flex;
+    flex-direction: column;
+}
+.item-sn {
+    display: flex;
+    justify-self: baseline;
+    text-indent: 20px;
+}
+.gridBox {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 50px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9em;
+    color: wheat;
+    background: #00000078;
+}
+.gridBox * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.totalprice {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 4px;
+    text-indent: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: underline;
+    background: #5721aa;
+    line-height: 3;
+}
+.priceGround{
+    font-size: 0.9em;
+}
+.blacker{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #000000b7;
+    z-index: 5;
+    display: none;
+}
+span.flaticon-remove::before {
+    font-size: 2em;
+}
+span.flaticon-remove {
+    color: #ff0303;
+    margin-right: 20px;
+    cursor: pointer;
+}
+span.flaticon-left::before {
+    font-size: 2em !important;
+    margin-right: 15px;
+}
+.Controlbar span {
+    margin: 5px;
+}
+.Controlbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-indent: 4px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    height: 50px;
+    line-height: 1.5;
+}
+.errBox,.congratsbox{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+.errBoxContainer{
+    height: 100%;
+    width: 100%;
+}
+.errBoxContainer {
+    height: 150px;
+    width: 400px;
+    position: relative;
+    margin: auto;
+    background: #000000eb;
+    top: 50%;
+    padding: 50px;
+    border-radius: 1%;
+    box-shadow: -1px 1px 4px 1px black;
+}
+.errBoxContainer {
+    height: 100px;
+    width: 400px;
+    position: relative;
+    margin: auto;
+    background: #000000eb;
+    top: 50%;
+    padding: 50px;
+    border-radius: 1%;
+    display: flex;
+    box-shadow: -1px 1px 4px 1px black;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.errBoxContainer span {
+    font-size: 2em;
+    font-variant: small-caps;
+    bottom: 40px;
+    position: relative;
+}
+span.errCode {
+    font-size: 1.1em;
+    font-variant: normal;
+}
+.okbutt {
+    font-size: 0.6em;
+    margin-top: 20px;
+}
+.okbutt span {
+    background: #3737af;
+    padding: 0px 30px 0px 30px;
+    border-radius: 1%;
+    cursor: pointer;
+}
+section.loadLike {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 0.4s linear infinite;
+    margin-top: 30px;
+    display: none;
+  }
+  .iconsCongrats {
+    /* height: 50; */
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+}
+    /* Safari */
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+@media only screen and (min-width: 800px){
+    .fitem{
+        width: 500px;
+    }
+    .submit{
+        width: 100px;
+        padding: 0px 20px 0px 20px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .errBoxContainer{
+        width: 200px;
+    }
+}
+@media only screen and (min-width:880px){
+    .selecteditems{
+        height: 100vh;
+        width: 100vw;
+    }    
+}

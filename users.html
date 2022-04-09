@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data | Bhetghat</title>
+    <link rel="stylesheet" href="icons/flaticon.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/users.css">
+
+</head>
+<body>
+    <div class="blacker"></div>
+    <div class="errBox">
+    <div class="errBoxContainer">
+        <span>Error</span>
+        <span class="errCode"></span>
+        <div class="okbutt"><span onclick="hideError()" class="okbut">OK</span></OK></div>
+    </div>
+    </div>
+    <div class="congratsbox">
+        <div class="errBoxContainer">
+            <div class="iconsCongrats"><img src="pics/valentine.png"><img src="pics/food.png"></div>
+            <span>Congratulations!!</span>
+            <span class="errCode">Your order has been succesfully placed.<br>You will be contacted within few minutes.</span>
+            <div class="okbutt"><span onclick="hideCongrats()" class="okbut">OK</span></OK></div>
+        </div>
+    </div>
+        <header>
+            <div class="headContainer">
+                <a href="http://www.bhetghat.works"><div class="textHeader"><img src="pics/hot-food.png">Bhetghat Family Restaurant</div></a>
+                <div class="lists">
+                    <div class="items"><a href="order"><span class="flaticon-tracking">Order Food</span></a></div>
+                    <div class="items"><a href="map"><span class="flaticon-location">Find Map</span></a></div>
+                    <div class="items"><a href="menu"><span class="flaticon-menu">Menu</span></a></div>
+                </div>
+                <div class="navButt" onclick="showHideMobileNav()"><i class="flaticon-menu-1"></i></div>
+                <div class="mobNavList">
+                    <ul class="navListContainer">
+                        <li><a href="order"><span class="flaticon-tracking">Order Food</span></a></li>
+                        <li><a href="map"><span class="flaticon-location">Find Map</span></a></li>
+                        <li><a href="menu"><span class="flaticon-menu">Menu</span></a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="selecteditems">
+            <div class="sContainer">
+                <div class="Controlbar"><span class="logolike">Selected Items::</span><span class="flaticon-close" onclick="showProducts()"></span></div>
+                <div class="headbar"><span>S.N</span><span>Food Items:</span><span>Price</span></div>
+                <div class="contentgrid">
+                </div>
+                <div class="totalprice"><span>Total Price:</span><span class="priceGround">rs 66</span></div>
+                <div class="emptyVessel"></div>
+            </div>
+        </div>
+<section class="sec1">
+    <div class="sec1container">
+        <div class="textDetail">Total Products:: <span class="total"></span></div>
+        <div class="showAll"><div class=showtoclick onclick="showProducts()">View Cart:<br><img src="pics/online-shop.png"></div></div>
+        <form>
+            <span class="info">Fill the form and Let us Know</span>
+            <div class="fitem"><div class="ficon"><span class="flaticon-employee"></span></div><input type="text" placeholder="Full Name" id="name"></div>
+            <div class="fitem"><div class="ficon"><span class="flaticon-email"></span></div><input type="email" placeholder="Email Address" id="email"></div>
+            <div class="fitem"><div class="ficon"><span class="flaticon-smartphone"></span></div><input type="tel" placeholder="Phone Number" id="phone"></div>
+            <div class="fitem"><div class="ficon"><span class="flaticon-real-estate"></span></div><input type="text" placeholder="Full Address" id="address"></div>
+            <input type="hidden" name="token" value="" id="token">
+            <div class="submit fitem" onclick="submitForm()">Submit<span class="flaticon-login"></span></div>
+        </form>
+    </div>
+</section>
+<section class="loadLike">
+    <div class="loader"></div>
+</section>
+    <footer class="foot">
+        <div class="whywait">Why Wait??</div>
+        <div class="visitNow">Visit Now..</div>
+        <div class="footp1">
+            <div class="social"><span class="flaticon-facebook"></span></div>
+            <div class="social"><span class="flaticon-symbol"></span></div>
+            <div class="social"><span class="flaticon-instagram"></span></div>
+        </div>
+        <div class="footp2">&#169;This website is owned by Bhetghat.</div>
+    </footer>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/users.js"></script>
+<script src="js/tknize.js"></script>
+</html>

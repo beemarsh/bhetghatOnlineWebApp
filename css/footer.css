@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Maven+Pro&family=Muli:wght@300&family=Special+Elite&family=Inria+Sans&display=swap');
+.foot{
+    height: 150px;
+    width: 100vw;
+    background: black;
+    position: relative;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot::before{
+    content: "";
+    background: #000000;
+    height: 100px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-3deg);
+    position: absolute;
+    left: 0;
+    top: -30px;
+    right: 0;
+    z-index: -1;
+}
+.footp1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #13476b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: -18px;
+    margin: 2px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+.social:hover{
+    background: black;
+}
+.footp2{
+    font-family: 'Inria Sans',sans-serif;
+    color: #524343b0;
+}
+.whywait{
+    font-family: 'Special Elite',cursive;
+    font-size: 2em;
+}
+.visitNow{
+    font-family: 'Special Elite',cursive;
+    font-size: 1.01em;
+    margin-top: 5px;
+}

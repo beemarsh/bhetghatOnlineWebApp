@@ -1,0 +1,9 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /apihandlers/
+
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} !bhetghat.works$
+RewriteCond %{HTTP_HOST} !127.0.0.1$
+RewriteRule (.*) - [F]

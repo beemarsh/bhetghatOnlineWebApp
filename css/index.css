@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Comic+Neue&family=PT+Sans&family=Muli:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.sec1{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.containersec1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.consec1,.consec2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainHead {
+    color: #1f4f71bf;
+    font-size: 3em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    text-align: center;
+}
+.subText {
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    margin-top: 20px;
+}
+.consecsec2 {
+    background: url("../pics/wave.svg") no-repeat;
+    background-size: auto;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background-size: cover;
+}
+.consecsec2 div{
+    height: 50px;
+    text-align: center;
+    line-height: 3;
+    margin-top: 20px;
+    background:#fcfcfd;
+    font-family: 'PT Sans', sans-serif;
+    color: #09f;
+    transition: 0.3s linear;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 200px;
+    box-shadow: -4px 0.1px 20px 0px #04030382;
+}
+.consecsec2 div:hover{
+    border: 1px solid #2f5875c7;
+    background: #fcfcfdd6;
+    color:#2f5875c7 ;
+}
+.consecsec2 div:hover .icons::before{
+    color: black !important;
+}
+.consecsec2 a{
+    text-decoration: none;
+    color: #09f;
+}
+
+.icons::before{
+    color: #09f !important;
+    font-size: 30px !important;
+    line-height: 1.9 !important;
+}
+.iconContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+.iconContainer span::before{
+    font-size: 4em !important;
+    color: #415767e0;
+}
+@media only screen and (max-width: 880px){
+.mainHead {
+    font-size: 2em;
+}
+}

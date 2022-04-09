@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+header{
+    height: 70px;
+    width: 100vw;
+    box-shadow:0.1px 0.1px 10px -2px #906e6e;
+    font-family: "Comfortaa",cursive;
+    font-size: 1.6em;
+}
+.headContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+.items span::before{
+    font-size: 1.7em !important;
+}
+.items {
+    border-bottom: 2px #7391a6  solid;
+    margin: 0px 10px 0px 10px;
+    border-radius: 1%;
+    color: #577b94;
+}
+.items a{
+    text-decoration: none;
+    color: #577b94;
+}
+.items a:hover{
+    color: #5d1b8a;
+}
+.textHeader{
+    display: flex;
+    align-items: center;
+    text-indent: 2;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.textHeader img{
+    max-width: 50px;
+}
+.navButt {
+    font-size: 2em;
+    text-indent: -23px;
+    z-index: 3;
+    color: #9c75da
+}
+.mobNavList {
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+    background-color: #000000a8;
+    top: 0;
+    z-index: 0;
+    display: none
+}
+
+.mobNavList li {
+    list-style-type: none;
+    display: block;
+    width: 100px;
+    max-width: 100px;
+    font-size: 1em;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    font-family: Muli, sans-serif;
+    margin-right: 50px;
+    margin-top: 10px
+}
+
+.mobNavList a {
+    text-decoration: none;
+    color: #fff
+}
+.navListContainer {
+    margin-top: 40px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly
+}
+@media only screen and (max-width: 880px) {
+    header{
+        font-size: 1em;
+    }
+    .headContainer{
+        justify-content: space-between !important;
+    }
+    .navButt{
+        margin-right: 10px;
+    }
+    .lists{
+        display: none;
+    }
+}
+@media only screen and (min-width: 880px){
+    .navButt{
+        display: none;
+    }
+}

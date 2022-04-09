@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhetghat Restaurant</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="icons/flaticon.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tut.css">
+</head>
+<body>
+    <div class="tutbox">
+        <div class="tutContainer">
+            <div class="cBar"><span class="flaticon-close" onclick="hideTut()"></span></div>
+            <div class="vidIco"><img src="pics/video.png"></div>
+            <div class="headofTut">Quick Tool</div>
+            <div class="message"></div>
+            <div class="okButtMess"><span onclick="hideTut()">OK</span></div>
+        </div>
+    </div>
+    <a href="tel:+9779867147417" id="popup__toggle">
+        <div class="circlephone" style="transform-origin: center;"></div>
+        <div class="circle-fill" style="transform-origin: center;"></div>
+        <div class="img-circle" style="transform-origin: center;">
+            <div class="img-circleblock" style="transform-origin: center;"></div>
+        </div></a>
+        <header>
+            <div class="headContainer">
+                <a href="http://www.bhetghat.works"><div class="textHeader"><img src="pics/hot-food.png">Bhetghat Family Restaurant</div></a>
+                <div class="lists">
+                    <div class="items"><a href="order"><span class="flaticon-tracking">Order Food</span></a></div>
+                    <div class="items"><a href="map"><span class="flaticon-location">Find Map</span></a></div>
+                    <div class="items"><a href="menu"><span class="flaticon-menu">Menu</span></a></div>
+                </div>
+                <div class="navButt" onclick="showHideMobileNav()"><i class="flaticon-menu-1"></i></div>
+                <div class="mobNavList">
+                    <ul class="navListContainer">
+                        <li><a href="order"><span class="flaticon-tracking">Order Food</span></a></li>
+                        <li><a href="map"><span class="flaticon-location">Find Map</span></a></li>
+                        <li><a href="menu"><span class="flaticon-menu">Menu</span></a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <section class="sec1">
+        <div class="containersec1">
+            <div class="consecsec1">
+                <div class="mainHead">Bhetghat Family Restaurant</div>
+                <div class="subText">Tilottama,Rupandehi<br>Open  till 10:00</div>
+                <div class="iconContainer"><span class="flaticon-menu"></span></div>
+            </div>           
+        </div>
+    </section>
+    <!-- Form -->
+    <section class="queryform">
+        <div class="formContainer">
+            <div class="searchhead">Search <span>3423</span> delicious foods.</div>
+            <div class="former">
+                <form onsubmit="return false;">
+                    <input type="hidden" name=token id="token">                    
+                    <label for="minprice">From:</label>
+                    <select id="minprice">
+                        <option value="50">Rs 50</option>
+                        <option value="100">Rs 100</option>
+                        <option value="200">Rs 200</option>
+                        <option value="300">Rs 300</option>
+                    </select>
+                    <label for="maxprice">To: </label>
+                    <select id="maxprice">
+                        <option value="400">Rs 400</option>
+                        <option value="700">Rs 700</option>
+                        <option value="800">Rs 800</option>
+                        <option value="1200" selected>Rs 1200</option>
+                        <option value="1600">Rs 1600</option>
+                        <option value="2000">Rs 2000</option>                        
+                    </select>
+                    |
+                    <input type="text" placeholder="Type the food" id='searchbar'>
+                    <button type="submit" onclick="searchQuery()"><span class="flaticon-transparency"></span></button>
+                </form>
+            </div>
+            <div class="examples">Eg:Sekuwa , Mutton Tas , Momos.</div>
+            <div id="showAll" onclick="return showAll()">Show All Foods</div>
+            <div class="loader"></div>
+        </div>
+    </section>
+    <!-- MEnu section -->
+    <section class="menu">
+        <div class="menuContainer" id="searchPoint">
+           <div class="totalBackground"></div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="whywait">Why Wait??</div>
+        <div class="visitNow">Visit Now..</div>
+        <div class="footp1">
+            <div class="social"><span class="flaticon-facebook"></span></div>
+            <div class="social"><span class="flaticon-symbol"></span></div>
+            <div class="social"><span class="flaticon-instagram"></span></div>
+        </div>
+        <div class="footp2">&#169;This website is owned by Bhetghat.</div>
+    </footer>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/tknize.js"></script>
+<script src="js/tut.js"></script>
+<script>
+    localStorage.clear();
+    document.addEventListener('DOMContentLoaded', function() {
+    showTutBox();
+    searchMenu();
+ }, false);
+</script>
+</html>
