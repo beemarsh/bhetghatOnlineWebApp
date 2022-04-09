@@ -8,4 +8,4 @@
 - ### HTML
 - ### JAVASCRIPT
 - ### MySQL DataBase
-- ### CSS
+- ### CSS / SCSS
